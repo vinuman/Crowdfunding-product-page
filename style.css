@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Commissioner', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+    height: 1.6rem;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
+
+nav > .nav-items> a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav > .nav-items> a:hover{
+    transform: scale(1.3);
+}
+
+
+nav{
+    background-image: url(image-hero-desktop.jpg);
+    background-size: cover;
+    width:100%;
+    height: 40rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+nav> img{
+    width:13rem;
+    height: 2rem;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+nav > img:hover{
+    transform: scale(1.3);
+}
+
+header{
+    width:60%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top:80%;
+    left:20%;
+}
+
+header > img{
+    position: absolute;
+    top:-11%;
+    left:45%;
+}
+
+header > h1{
+    font-size: 2.8rem;
+    margin-top: 3rem;
+}
+header > p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    opacity: 0.5;
+}
+
+.buttons{
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    position: relative;
+}
+
+.back-btn{
+    width:20rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #3CB3AB;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.back-btn:hover{
+    background-color: #147A73   ;
+}
+
+.bookmark-btn{
+    width:17.5rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #B1B1B1;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+span{
+    margin-bottom: 8rem;
+    position: absolute;
+    top: 35%;
+    right:4%;
+}
+
+.bookmark-btn::before{
+    content: "";
+    display: inline-block;
+    width:5.6rem;
+    height: 5.6rem;
+    background-color: #147A73;
+    border-radius: 50%;
+    background-image: url(icon-bookmark.svg);
+    mix-blend-mode:multiply;
+    position: absolute;
+    top:0;
+    right:17%;
+}
+
+
+
+.bookmark-btn:hover{
+    background-color: #147A73;
+    color:#fff;
+}
+
+.count{
+    width:60%;
+    height: 21.2rem;
+    position: absolute;
+    top:150%;
+    left:20%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.count-tab{
+    width:100%;
+    height: 6.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.count-actual{
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    padding-right: 4rem;
+}
+
+.count-3{
+    border:none;
+}
+
+.count-actual > h2{
+   font-size: 3.2rem;
+}
+.count-actual > p{
+   font-size: 1.6rem;
+   opacity: 0.5;
+   margin-top: 0.4rem;
+}
+
+.my-slider{
+    width:80%;
+    height: 1.2rem;
+    margin: 4rem auto;
+    margin-left: 7rem;
+    -webkit-appearance: none;
+    background: #3CB3AB;
+    opacity: 2;
+    border-radius: 1rem;
+}
+
+.my-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+}
+
+.container{
+    width:60%;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    left:20%;
+    top:215%;
+    
+}
+
+.container > h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 4rem 4.5rem;
+}
+.container > p{
+    font-size: 1.6rem;
+    color:#7A7A7A;
+    margin: 2rem auto;
+    width:90%;
+    text-align: left;
+    line-height: 3rem;
+}
+
+.pledge-card{
+    width:90%;
+    height: 24.8rem;
+    border:1px solid #B1B1B1;
+    margin: 4rem auto;
+    border-radius: 1rem;
+}
+
+.pledge-card:hover{
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pledge-card > p{
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 1rem auto;
+    color: #7A7A7A;
+    line-height: 3rem;
+}
+
+.title{
+    width:90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title > h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.title > p{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: #3CB3AB;
+}
+.footer{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left > h4{
+    margin-right: 1rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.left > p{
+    font-size: 1.5rem;
+    color: #7A7A7A;
+    padding-top: 1.5rem;
+}
+
+.select-reward{
+    width:15.7rem;
+    height: 4.8rem;
+    color: #fff;
+    background-color: #3CB3AB;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.select-reward:hover{
+    background-color: #147A73;
+}
+
+.modal {
+    /* display: none; */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); 
+  }
+  
+  
+  .modal-content {
+    background-color: #FFFFFF;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 90.5rem; 
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .modal-content > h2{
+     font-size: 2.4rem;
+     margin-left: 8rem;
+     margin-top: 4rem;
+  }
+  .modal-content > p{
+     font-size: 1.6rem;
+     color: #7A7A7A;
+     margin-left: 8rem;
+     margin-top: 2rem;
+  }
+  
+  .close {
+    color: #979797;
+    position: absolute;
+    top:2%;
+    right:5%;
+    font-size: 4.4rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .model-cards{
+    width:80%;
+    height: 15.7rem;
+    margin: 2.5rem auto;
+    border:1px solid #B1B1B1;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .card1{
+    margin-top: 3.5rem;
+    display: flex;
+  }
+
+  input[type="radio"] {
+    display: none; 
+}
+
+
+.custom-radio {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    position: absolute;
+    left:2%;
+    top:25%;
+    cursor: pointer;
+}
+
+.card-content{
+    position: relative;
+}
+  .card-content > h3{
+    width: 80%;
+    font-size: 1.8rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+
+  .pledge{
+    position: absolute;
+    top:0;
+    left:35%;
+    font-size: 1.6rem;
+    color: #3CB3AB;
+    font-weight: bold;
+  }
+  .card-content > p{
+    width: 90%;
+    font-size: 1.6rem;
+    color:#7A7A7A;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    line-height: 2.8rem;
+  }
+
+  
